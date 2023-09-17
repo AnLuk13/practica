@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+
+.home {
+  min-height: 100vh;
+  background: #fff8f8;
+  background-size: 100% 100%;
+}
+
+.home-welcome__title {
+  text-align: center;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 0;
+}
+
+.home-welcome__desc {
+  text-align: center;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 6px 0px 20px;
+}
+
+.home-cards {
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-cards-container {
+  position: relative;
+  display: flex;
+  gap: 110px;
+  justify-content: center;
+}
+
+.home-card {
+  position: relative;
+  width: 278px;
+  height: 320px;
+  border-radius: 50px;
+  z-index: 3;
+  background: url(../img/box-4.png);
+  background-size: 100% 100%;
+}
+
+.home-card__desc {
+  position: absolute;
+  top: 25px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  width: 278px;
+  text-align: center;
+  margin: 0;
+}
+
+.home-card__img {
+  position: absolute;
+  top: 98px;
+  width: 234px;
+  height: 200px;
+  right: 22px;
+}
+
+.home-card__svg {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  animation: rotate 5s linear infinite;
+}
+
+.svg-1 {
+  left: -75px;
+  top: 85px;
+}
+
+.svg-2 {
+  right: -46px;
+  top: -46px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media (max-width: 650px) {
+  .home-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
