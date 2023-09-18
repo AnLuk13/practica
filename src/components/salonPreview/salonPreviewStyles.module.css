@@ -1,0 +1,15 @@
+.card {
+  border: 1px solid black;
+  width: 220px;
+  height: 210px;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #a0e4f8;
+}
+
+.previewImage {
+  width: 60%;
+  height: 40%;
+  border-radius: 8px;
+}

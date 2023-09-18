@@ -1,0 +1,39 @@
+.card {
+  position: relative;
+  width: 278px;
+  height: 320px;
+  border-radius: 50px;
+  background-size: 100% 100%;
+  background-color: #ffd6d6;
+  margin: 20px auto;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card_desc {
+  position: absolute;
+  top: 25px;
+  font-weight: 800;
+  color: #000000;
+  font-size: 34px;
+  letter-spacing: 0;
+  line-height: normal;
+  width: 278px;
+  text-align: center;
+  margin: 0;
+}
+
+.card_img {
+  position: absolute;
+  top: 98px;
+  width: 234px;
+  height: 200px;
+  right: 22px;
+  border-radius: 26px;
+  object-fit: revert;
+}
