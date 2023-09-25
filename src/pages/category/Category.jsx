@@ -19,7 +19,7 @@ function Category() {
       setIsLoading(true);
       getSalons()
         .then((res) => {
-          const filteredCategories = res.data.map((e) => {
+          const filteredCategories = res.map((e) => {
             if (e.services.includes(id)) {
               return e;
             }
