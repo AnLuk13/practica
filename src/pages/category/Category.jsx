@@ -34,8 +34,11 @@ function Category() {
   }, [id]);
 
   return (
-    <div>
+    <div className={styles.category}>
       <Navbar />
+      <div className={styles.chooseBox}>
+        <p className={styles.choose}>Let's choose the best place</p>
+      </div>
       {isLoading && <div>Loading...</div>}
       {salons.length ? (
         <div className={styles.categoriesWrapper}>

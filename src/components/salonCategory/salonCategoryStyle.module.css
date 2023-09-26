@@ -4,20 +4,21 @@
   height: 320px;
   border-radius: 50px;
   background-size: 100% 100%;
-  background-color: #ffd6d6;
-  margin: 20px auto;
+  background: var(--red_box, #FFD6D6);
+  margin: auto;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 50px 0px #FFF8F8 inset;
   transition: transform 0.3s ease;
 }
 
 .card:hover {
   transform: scale(1.05);
+  background-color: var(--bluebox, #BBF2FE);
 }
 
 .card_desc {
   position: absolute;
-  top: 25px;
+  top: 30px;
   font-weight: 800;
   color: #000000;
   font-size: 34px;
@@ -34,6 +35,6 @@
   width: 234px;
   height: 200px;
   right: 22px;
-  border-radius: 26px;
-  object-fit: revert;
+  border-radius: 32px;
+  object-fit: cover;
 }

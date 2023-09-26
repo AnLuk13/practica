@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./salonPreviewStyles.module.css";
+import RowBox from "../../assets/svgs/RowBox";
 
 function SalonPagePreview({ salon }) {
   const navigate = useNavigate();
@@ -10,9 +11,25 @@ function SalonPagePreview({ salon }) {
   };
 
   return (
-    <div className={styles.card} onClick={goToSalonPage}>
-      <img className={styles.previewImage} src={salon.imageUrl} alt="" />
-      <h3>{salon.name}</h3>
+    <div className={styles.card}>
+      <div className={styles.cardContent}>
+        <div className={styles.images}>
+          <img className={styles.previewImage} src={salon.imageUrl} alt="" />
+        </div> 
+        <p className={styles.name}>{salon.name}</p>
+        <div className={styles.servicesBox}>
+          <p className={styles.services}>{salon?.services.map((service) => {
+              return <div>· {service}</div>;
+            })}
+          </p>
+        </div>
+        <div className={styles.buttonBox}>
+          <div className={styles.openButtonBlue} onClick={goToSalonPage}>
+            <div className={styles.rowBox}><RowBox /></div>
+              <div className={styles.textWrapper}>Open</div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
