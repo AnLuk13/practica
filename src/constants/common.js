@@ -8,7 +8,7 @@ export const servicesEnum = {
         imageUrl: 'https://www.waxingthecity.com/wp-content/uploads/2020/11/1503_WTC_MG_4950-1024x683-optimized.jpg'
     },
     NAIL_TREATMENT: {
-        name: 'Nail treatment',
+        name: 'Nails',
         imageUrl: 'https://hesstudios.org/wp-content/uploads/2022/07/Nail-care-service-at-nail-salon-2048x1365-1-1024x683.jpg'
     },
     SKIN_CARE: {

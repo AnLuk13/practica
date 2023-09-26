@@ -1,15 +1,93 @@
 .card {
-  border: 1px solid black;
-  width: 220px;
-  height: 210px;
-  padding: 12px;
-  border-radius: 12px;
-  cursor: pointer;
-  background-color: #a0e4f8;
+  position: relative;
+  width: 278px;
+  height: 366px;
+  background-color: var(--bluebox, #BBF2FE);
+  border-radius: 40px;
+  box-shadow: inset 0px 0px 100px #f8feff;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  background-color: var(--bluebox, #FFD6D6);
+  transition: 0.5s ease;
+}
+.cardContent{
+  position: relative;
+  width: 232px;
+  height: 314px;
+  top: 26px;
+  left: 26px;
+}
+.images{
+  width: 228px;
+  height: 93px;
+}
+.previewImage {
+  width: 93px;
+  left: 0;
+  height: 93px;
+  top: 0;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.name{
+  width: 228px;
+  top: 0;
+  left: 0;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.servicesBox{
+  width: 200px;
+  height: 72px;
+  padding-left: 16px;
+}
+.services{
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: initial;
+}
+.buttonBox{
+  height: 47px;
+  position: relative;
+  width: 196px;
+  padding-top: 40px;
+  margin-left: 16px;
+}
+.rowBox{
+  height: 29px;
+  left: 177px;
+  position: absolute;
+  width: 16px;
+  top: 9px;
+}
+.openButtonBlue{
+  background-color: #000000;
+  border-radius: 20px;
+  height: 47px;
+  position: relative;
+  width: 130px;
+}
+.textWrapper{
+  color: var(--blueback, #F8FEFF);
+  font-family: "Montserrat", Helvetica;
+  font-size: 21px;
+  font-weight: 700;
+  left: 35px;
+  right: 35px;
+  bottom: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 10px;
 }
 
-.previewImage {
-  width: 60%;
-  height: 40%;
-  border-radius: 8px;
-}
+

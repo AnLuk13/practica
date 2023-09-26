@@ -1,4 +1,3 @@
-import axios from "axios";
 import {salons} from "../DB";
 
 export async function getSalons() {

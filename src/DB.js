@@ -1,7 +1,7 @@
 export const  servicesEnum={
   HAIR_CUTTING : 'Hair cutting',
   WAXING : 'Waxing',
-  NAIL_TREATMENT : 'Nail treatment',
+  NAIL_TREATMENT : 'Nails',
   SKIN_CARE : 'Skin care',
   TANNING : 'Tanning',
   MASSAGE : 'Massage',
