@@ -1,8 +1,307 @@
-.salonMain {
-  border: 1px solid;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+
+.salonPage {
+  background-color: #f8feff;
+  height: 100vh;
 }
 
-.salonImage {
-  width: 20%;
-  height: 20%;
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 46px;
+}
+
+.optionsBox {
+  width: 413px;
+  height: 456px;
+  display: flex;
+  flex-direction: column;
+  gap: 37.4px;
+}
+
+.informationBox {
+  box-sizing: border-box;
+  border-radius: 40px;
+  background-color: #bbf2fe;
+  box-shadow: 0px 0px 100px 0px #f8feff inset;
+  max-width: 535px;
+  height: 438px;
+  padding: 15px 46px 15px 15px;
+}
+
+.informationContentBox {
+  display: flex;
+  width: 474px;
+  gap: 46px;
+  align-items: center;
+}
+
+.informationImageBox {
+  width: 262px;
+  height: 408px;
+  flex-shrink: 0;
+  border-radius: 30px;
+}
+
+.informationTextBox {
+  display: flex;
+  flex-direction: column;
+  gap: 69px;
+  align-items: center;
+}
+
+.informationImage {
+  border-radius: 30px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.locationTitle {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.salonName {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.ul {
+  padding-left: 20px;
+}
+
+.sector {
+  text-align: start;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.address {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.appointmentTitle {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: start;
+}
+
+.timeBox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.chooseText {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: start;
+}
+
+.dateTime {
+  display: flex;
+  gap: 36px;
+}
+
+.dateInput {
+  box-sizing: border-box;
+  width: 165px;
+  height: 46px;
+  padding: 0 23px;
+  border-radius: 50px;
+  background: var(--blue_box, #bbf2fe);
+  box-shadow: 0px 0px 50px 0px #f8feff inset;
+  border: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.dateInput:focus {
+  outline: 1px solid #68d5ee;
+}
+
+.selectionTime {
+  box-sizing: border-box;
+  width: 190px;
+  height: 46px;
+  padding: 0 23px;
+  border-radius: 50px;
+  background: var(--blue_box, #bbf2fe);
+  box-shadow: 0px 0px 50px 0px #f8feff inset;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.selectionTime:focus {
+  outline: 1px solid #68d5ee;
+}
+
+.selection {
+  width: 216px;
+  height: 46px;
+  padding: 0 23px;
+  border-radius: 50px;
+  background: var(--blue_box, #bbf2fe);
+  box-shadow: 0px 0px 50px 0px #f8feff inset;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.selection:focus {
+  outline: 1px solid #68d5ee;
+}
+
+.selectionContainer {
+  width: fit-content;
+  height: 46px;
+  position: relative;
+}
+
+.selectionContainer::after {
+  box-sizing: border-box;
+  content: url("../../img/svg/down-arrow.svg");
+  position: absolute;
+  top: 50%;
+  right: 23px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.option {
+  text-align: left;
+}
+
+.buttons {
+  display: flex;
+  gap: 55px;
+}
+
+.button {
+  width: 130px;
+  height: 47px;
+  border: none;
+  border-radius: 50px;
+  background: #000;
+  color: var(--blue_back, #f8feff);
+  font-family: Montserrat;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.button:hover {
+  background: #3c3c3c;
+}
+
+.callSvg {
+  margin-left: 10px;
+}
+
+@media (max-width: 930px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 23px;
+  }
+
+  .timeBox {
+    align-items: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .appointmentTitle {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .informationBox {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .informationContentBox {
+    width: 100%;
+    gap: 30px;
+  }
+
+  .informationTextBox {
+    width: 50%;
+    height: 60%;
+    gap: 20px;
+  }
+
+  .informationImageBox {
+    width: 55%;
+    height: 100%;
+  }
+
+  .locations {
+    gap: 15px;
+  }
 }
