@@ -1,0 +1,102 @@
+.aboutUs {
+    min-height: 100vh;
+    background: #FFF8F8;
+    background-size: 100% 100%;
+    font-family: "Montserrat", Helvetica;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 66px;
+}
+
+.frame {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    justify-content: center;
+    padding: 0px 115px;
+    position: relative;
+}
+.frame .div {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 50px;
+    max-width: 550px;
+    min-width: 300px;
+    position: relative;
+    text-align: initial;
+}
+  
+.frame .text {
+    align-self: stretch;
+    color: #000000;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+}
+  
+.frame .p {
+    align-self: stretch;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+}
+.frame .div2 {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    position: relative;
+    width: 268px;
+}
+.frame .box{
+    background-color: #FFD6D6;
+    border-radius: 50px;
+    box-shadow: 0px 0px 50px 0px #FFF8F8 inset;
+    height: 268px;
+    position: relative;
+    width: 268px;
+}
+.frame .star{
+    height: 150px !important;
+    left: 60px !important;
+    position: absolute !important;
+    top: 59px !important;
+    width: 150px !important;
+}
+.frame2 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    height: 104px;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+.frame2 .text2{
+    align-self: stretch;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+}
+.rowdown{
+    height: 15.95px;
+    position: relative;
+    width: 29.46px;
+}

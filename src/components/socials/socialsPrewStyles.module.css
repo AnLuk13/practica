@@ -1,0 +1,13 @@
+.socials {
+    align-items: center;
+    display: inline-flex;
+    gap: 38px;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .socials .vector {
+    height: 30px;
+    position: relative;
+    width: 30px;
+  }
