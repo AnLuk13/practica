@@ -11,7 +11,7 @@ function SalonPagePreview({ salon }) {
   };
 
   return (
-    <div className={styles.card}>
+    <div className={styles.card}  onClick={goToSalonPage}>
       <div className={styles.cardContent}>
         <div className={styles.images}>
           <img className={styles.previewImage} src={salon.imageUrl} alt="" />
@@ -24,7 +24,7 @@ function SalonPagePreview({ salon }) {
           </p>
         </div>
         <div className={styles.buttonBox}>
-          <div className={styles.openButtonBlue} onClick={goToSalonPage}>
+          <div className={styles.openButtonBlue}>
             <div className={styles.rowBox}><RowBox /></div>
               <div className={styles.textWrapper}>Open</div>
           </div>

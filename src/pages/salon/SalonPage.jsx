@@ -6,6 +6,7 @@ import styles from "./salonPageStyles.module.css";
 import callSvg from "../../img/svg/call.svg";
 import telegram from "../../img/svg/telegram.svg";
 import mail from "../../img/svg/mail.svg";
+import downArrow from "../../img/svg/down-arrow.svg"
 
 function SalonPage() {
   const params = useParams();
@@ -56,12 +57,14 @@ function SalonPage() {
                     value={dateValue}
                     onChange={handleDateChange}
                   />
-                  <div className={styles.selectionContainer}>
+                  <div className={styles.selectionContainer} style={{display: "flex", flexDirection: "column", gap: "10px", height: "fit-content"}}>
                     {salon?.branches.map((branch) => {
                       return (
                         <div>
                           {branch?.workingSchedule?.map((ws) => {
                             return (
+                              <div className={styles.selectionContainer2}>
+                                <img className={styles.selectionContainerTime} src={downArrow} alt="" />
                               <select className={styles.selectionTime}>
                                 {Object.entries(ws).map(([day, time]) => {
                                   return (
@@ -71,6 +74,7 @@ function SalonPage() {
                                   );
                                 })}
                               </select>
+                              </div>
                             );
                           })}
                         </div>
@@ -79,12 +83,16 @@ function SalonPage() {
                   </div>
                 </div>
                 <div className={styles.chooseText}>Choose your service:</div>
+               
                 <div className={styles.selectionContainer}>
+                <div className={styles.selectionContainer2}>
+                <img className={styles.selectionContainerTime} src={downArrow} alt="" />
                   <select className={styles.selection}>
                     {salon?.services.map((service) => {
                       return <option>{service}</option>;
                     })}
                   </select>
+                  </div>
                 </div>
               </div>
               <div className={styles.buttons}>
